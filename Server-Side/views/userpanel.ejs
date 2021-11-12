@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!-- Order matters (idk why)-->
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.13.0/css/mdb.min.css" rel="stylesheet">
+    <!-- Animations Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>UwUProtection V2 - User Panel</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <script>
+        setTimeout(function () {
+           document.location='../start-login'
+        }, "<%= expTime %>")
+      </script>
+      
+</head>
+
+<body>
+    <center>
+        <main>
+            <div class="jumbotron">
+              <h1 class="animated fadeIn" style="font-weight: 700; font-size: 5em">User Panel</h1>
+              <p class="animated fadeIn" style="font-weight: 300; font-size: 2em">Welcome back <%= username %></p>
+              <br> <br> <br>
+              <p class="animated fadeIn" style="font-weight: 300; font-size: 1.5em">Your session ID is (Shareing this is prohibited and result a ban) "<%= sessionID %>"</p>
+              <br>
+              <p class="animated fadeIn" style="font-weight: 300; font-size: 1.5em">Your session will be expire in <%= sessionExp %> minutes so better be quick</p>
+              <br>
+              <p class="animated fadeIn" style="font-weight: 300; font-size: 1.5em">Your UID is <%= uid %></p>
+              <br>
+              <p class="animated fadeIn" style="font-weight: 300; font-size: 1.5em">You currently owned <%= clients %> client</p>
+              <br>
+              <p class="animated fadeIn" style="font-weight: 300; font-size: 1em">Download button is broken just c&p this "https://uwuprotection.notthatuwu.xyz/api/storage/installer"</p>
+              <button onClick="window.location.href='https://uwuprotection.notthatuwu.xyz/api/storage/installer';" type="button" class="btn btn-info animated fadeIn"> Download Installer</button>
+            </div>
+          </main>    
+        <!-- <div style="width: 50%" class="row">
+            <div class="col-sm">
+                <p class="animated fadeInUp" style="font-weight: 1000; font-size: 5em">UwU Protection V2</p>
+                <br><br><br>
+                <p class="animated fadeIn" style="font-weight: 300; font-size: 2em">Shit Protection for your epic gamer client</p>
+                <br>
+                <p class="animated fadeIn" style="font-weight: 300; font-size: 1.2em">(Get cracked in 0.5 seconds !!!!)</p>
+                <button onclick="gomyproject()" type="button" class="fab fa-discord fa-lg white-text; btn btn-info; animated fadeIn"> Login with discord</button>
+            </div>
+        </div> -->
+    </center>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!-- Order matters (idk why)-->
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.13.0/css/mdb.min.css" rel="stylesheet">
+    <!-- Animations Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>UwUProtection V2 - Developers Panel</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+
+<body>
+    <center>
+        <main>
+            <div class="jumbotron">
+                <h1 class="animated fadeIn" style="font-weight: 700; font-size: 5em">UwU Protection V2</h1>
+                <p class="animated fadeIn" style="font-weight: 300; font-size: 2.5em">Developers Portal</p>
+                <p class="animated fadeIn" style="font-weight: 300; font-size: 3em">Client: <%= clientname %>
+                </p>
+                <p class="animated fadeIn" style="font-weight: 300; font-size: 1.5em">Your dev session will be expire in <%= sessionExp %> minutes so better be quick</p>
+                <form action="/developerpanel" method="POST" novalidate>
+                    <br><br>
+                    <p class="animated fadeIn" style="font-weight: 500; font-size: 1.5em">Your Info</p>
+                    <label for="uid" class="form-label animated fadeIn">Your UID</label>
+                    <input readonly type="text" class="form-control animated fadeIn" name="uid" id="uid"
+                        value="<%= uid %>">
+                    <label for="sessionID" class="form-label animated fadeIn">Session ID</label>
+                    <input readonly type="text" class="form-control animated fadeIn" name="sessionID" id="sessionID"
+                        value="<%= sessionID %>">
+                    <br><br>
+                    <p class="animated fadeIn" style="font-weight: 500; font-size: 1.5em">Client Info</p>
+                    <label for="clientname" class="form-label animated fadeIn">Client Name</label>
+                    <input type="text" class="form-control animated fadeIn" name="clientname" id="clientname"
+                        value="<%= clientname %>">
+                    <label for="clientversion" class="form-label animated fadeIn">Client Version</label>
+                    <input type="text" class="form-control animated fadeIn" name="clientversion" id="clientversion"
+                        value="<%= clientversion %>">
+                    <br><br>
+                    <p class="animated fadeIn" style="font-weight: 500; font-size: 1.5em">Client User</p>
+                    <p class="animated fadeIn" style="font-weight: 300; font-size: 1.5em">User list: <%= userUID %></p>
+                    <label for="adduser" class="form-label animated fadeIn">Add User (uid)</label>
+                    <input type="text" class="form-control animated fadeIn" name="adduser" id="adduser">
+                    <label for="removeuser" class="form-label animated fadeIn">Remove User (uid)</label>
+                    <input type="text" class="form-control animated fadeIn" name="removeuser" id="removeuser">
+                    <br><br>
+                    <p class="animated fadeIn" style="font-weight: 500; font-size: 1.5em">Client Download</p>
+                    <label for="clientjar" class="form-label animated fadeIn">Client Jar Link</label>
+                    <input type="text" class="form-control animated fadeIn" name="clientjar" id="clientjar" value="<%= clientjar %>">
+                    <label for="clientjson" class="form-label animated fadeIn">Client Json Link</label>
+                    <input type="text" class="form-control animated fadeIn" name="clientjson" id="clientjson" value="<%= clientjson %>">
+                    <button type="submit"
+                        class="btn btn-info animated fadeIn">
+                        Update</button>
+                </form>
+            </div>
+        </main>
+        <!-- <div style="width: 50%" class="row">
+            <div class="col-sm">
+                <p class="animated fadeInUp" style="font-weight: 1000; font-size: 5em">UwU Protection V2</p>
+                <br><br><br>
+                <p class="animated fadeIn" style="font-weight: 300; font-size: 2em">Shit Protection for your epic gamer client</p>
+                <br>
+                <p class="animated fadeIn" style="font-weight: 300; font-size: 1.2em">(Get cracked in 0.5 seconds !!!!)</p>
+                <button onclick="gomyproject()" type="button" class="fab fa-discord fa-lg white-text; btn btn-info; animated fadeIn"> Login with discord</button>
+            </div>
+        </div> -->
+    </center>
+</body>
+
+</html>

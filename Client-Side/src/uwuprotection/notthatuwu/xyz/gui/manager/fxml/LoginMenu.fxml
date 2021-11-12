@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="183.0" prefWidth="439.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uwuprotection.notthatuwu.xyz.gui.controller.LoginMenuGui">
+   <children>
+      <Label layoutX="192.0" layoutY="14.0" text="Login">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="loginButton" layoutX="196.0" layoutY="143.0" mnemonicParsing="false" onAction="#onLoginClicked" text="Login" />
+      <Label layoutX="39.0" layoutY="82.0" text="Session ID:" />
+      <TextField fx:id="sessionTextField" layoutX="133.0" layoutY="77.0" prefHeight="26.0" prefWidth="226.0" promptText="Input your session ID " />
+   </children>
+</AnchorPane>

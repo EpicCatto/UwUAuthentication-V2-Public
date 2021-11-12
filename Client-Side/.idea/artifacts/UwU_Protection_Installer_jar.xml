@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="UwU Protection Installer:jar">
+    <output-path>$PROJECT_DIR$/classes/artifacts/UwU_Protection_Installer_jar</output-path>
+    <root id="archive" name="UwU Protection Installer.jar">
+      <element id="module-output" name="UwU Protection Installer" />
+    </root>
+  </artifact>
+</component>
